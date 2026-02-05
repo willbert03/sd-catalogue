@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>SD Branded Brochure</title>
+    <title>Suffolk Digital Online Product Catalogue</title>
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
-    <link rel="icon" type="image/x-icon" href="sd-logo.svg" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://suffolkdigital.co.uk/expanse/themes/suffolkdigital/Digital/images/favicon.ico"
+    />
     <!-- Flipbook StyleSheet -->
     <link
       href="/sd-catalogue/dflip/css/dflip.min.css"
@@ -44,7 +48,7 @@
     .df-container.df-loading:after,
     .df-page-loading.df-page-loading:after,
     .df-thumb-container .df-vrow:before {
-      background-image: url("/sd-catalogue/sd-logo.svg") !important;
+      background-image: url("/sd-logo.svg") !important;
       animation: spin 0.75s linear infinite;
       transform-origin: center;
     }
@@ -72,8 +76,8 @@
         ambientLightColor: "#fcfbfc",
         backgroundColor: "#ffffff80",
         allControls:
-          "altPrev,pageNumber,altNext,outline,more,thumbnail,fullScreen,download,pageMode",
-        moreControls: "thumbnail,fullScreen,download,pageMode",
+          "altPrev,pageNumber,altNext,outline,download,more,thumbnail,fullScreen,pageMode,zoomIn,zoomOut",
+        moreControls: "thumbnail,fullScreen,pageMode,zoomIn,zoomOut",
         soundEnable: false,
         height: "100%",
         text: {
@@ -83,6 +87,7 @@
         hard: "cover",
         autoEnableOutline: true,
         overwritePDFOutline: true,
+        scrollWheel: true,
       };
       option_sdbrochure.outline = [
         { title: "About Us", dest: 2 },
@@ -99,7 +104,7 @@
         { title: "Seasonal", dest: 92 },
         { title: "Stationary", dest: 102 },
         { title: "Stickers & Labels", dest: 118 },
-        { title: "Artwork Guide", dest: 121 },
+        { title: "Artwork Guide", dest: 123 },
       ];
     </script>
     <!-- jQuery  -->
